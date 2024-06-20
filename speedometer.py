@@ -339,7 +339,7 @@ if __name__ == "__main__":
     plugin_name = "speedometer.py"
     
     # Force a new, clean scene
-    cmds.file("X:/redgun2_rg2-13437/000-rnd/0000/3d/anim/rg2_000-rnd_0000_anim_v079_cob.ma", open=True, f=True)
+    cmds.file(new=True, f=True)
     
     # Reload the plugin
     cmds.evalDeferred(f"if cmds.pluginInfo('{plugin_name}', q=True, loaded=True): cmds.unloadPlugin('{plugin_name}')")
